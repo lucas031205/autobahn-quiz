@@ -1,0 +1,10 @@
+{
+  "name": "Österreich Autobahn Quiz",
+  "short_name": "Autobahn Quiz",
+  "description": "Quiz über die österreichischen Autobahnen und Schnellstraßen",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "orientation": "landscape"
+}

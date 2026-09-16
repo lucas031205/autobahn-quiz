@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+
+    <title>Österreich Autobahn Quiz</title>
+
+    <!-- MapLibre -->
+    <link
+        href="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.css"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="top">
+
+        <h1>🇦🇹 Österreich Autobahn Quiz</h1>
+
+        <div class="controls">
+
+            <input
+                id="answerInput"
+                type="text"
+                placeholder="z.B. A1 Westautobahn"
+                autocomplete="off"
+            >
+
+            <button id="submitButton">
+                Eingeben
+            </button>
+
+        </div>
+
+        <div class="status">
+
+            Gefunden:
+            <strong id="foundCount">0</strong>
+            /
+            <strong id="totalCount">0</strong>
+
+            <span id="message"></span>
+
+        </div>
+
+    </div>
+
+
+    <div id="map"></div>
+
+
+    <!-- MapLibre -->
+    <script src="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./service-worker.js");
+}
+</script>
+
+</body>
+</html>
